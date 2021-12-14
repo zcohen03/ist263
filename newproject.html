@@ -17,10 +17,13 @@ body {
 
 /* Header/logo Title */
 .header {
-  padding: 60px;
+  padding: 40px;
   text-align: center;
   background: #4F7942;
   color: white;
+  font-size: 40px;
+  font-family: "monaco", monospace;
+  
 }
 
 /* Style the top navigation bar */
@@ -86,6 +89,11 @@ body {
   .row, .navbar {   
     flex-direction: column;
   }
+  .fakeimg {
+    background-color:lightgreen;
+  width: 100%;
+  padding: 20px;
+  }
 }
 </style>
 </head>
@@ -98,14 +106,14 @@ body {
 
 <!-- Header -->
 <div class="header">
-  <h1>WELCOME</h1>
+  <h1><b>WELCOME</b></h1>
   <p>To the house of Football.</p>
 </div>
 
 <!-- Navigation Bar -->
 <div class="navbar">
   <a href="newproject.html">Home</a>
-  <a href="#">Current Football</a>
+  <a href="current2.html">Current Football</a>
   <a href="#">Football Database</a>
   <a href="#">Contact Us</a>
 </div>
@@ -142,16 +150,18 @@ body {
     <h2>Contact Us</h2>
     <form action="mailto:zcohen03@syr.edu" method="POST">
             
-        <label for="fullname">Full name:</label>
+        <label for="fullname">Name:</label> <br>
         <input type="text" id="fullname" name="fulln">  <br> <br> <br>  
      
-        <label for="complaints">Concerns</label> 
+        <label for="complaints">Concerns:</label> <br>
         <textarea id="complaints" name="complaints"> Place your concerns here </textarea>  <br><br> <br> 
         
-        <input type="radio" id="level" name="level1" value="Not Happy"> 
-        <label for="level1">Not happy</label>
         <input type="radio" id="level" name="level2" value="Happy"> 
-        <label for="level2">Happy</label> <br><br> <br> 
+        <label for="level2">Happy</label> <br> 
+        <input type="radio" id="level" name="level1" value="Not Happy"> 
+        <label for="level1">Not happy</label> <br><br><br>
+
+       
 
         <label for="contact">Method of contact</label>
      <select id="contact" name="contact">
@@ -160,7 +170,7 @@ body {
         <option value="text">Text</option>
     </select><br><br> <br> 
 
-    <label for="contactinfo">Please provide your contact information:</label>
+    <label for="contactinfo">Please provide your contact information:</label><br>
     <input type="text" id="contactinfo" name="conta">  <br> <br> <br>  
 
         <input type="submit" value="Voice my concerns">     

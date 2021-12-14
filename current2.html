@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Current Football</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+.header {
+  padding: 40px;
+  text-align: center;
+  background: #4F7942;
+  color: white;
+  font-size: 40px;
+  font-family: "monaco", monospace;
+  
+}
+
+.navbar {
+  display: flex;
+  background-color: #333;
+}
+
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.leftside {
+  flex: 100%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+.rightside {
+  flex: 0%;
+  background-color: white;
+  padding: 20px;
+}
+
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+.fakeimg:hover {
+  background-color: #ddd;
+  color: black;
+}
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+@media screen and (max-width: 600px) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
+  .fakeimg {
+    background-color:lightgreen;
+  width: 100%;
+  padding: 20px;
+  }
+}
+</style>
+</head>
+<body>
+
+
+<div style="background:#265d07;padding:10px">
+    <h4 style="text-align:center"></h4>
+  </div>
+
+
+
+<div class="navbar">
+  <a href="newproject.html">Home</a>
+  <a href="current2.html">Current Football</a>
+  <a href="#">Football Database</a>
+  <a href="#">Contact Us</a>
+</div>
+
+<div class="row">
+  <div class="leftside">
+    <h2>Current Football</h2>
+    <h5>Every aspect of the current football world at your fingertips.</h5>
+    <img src="modernfootball" alt="soccer pitch">
+    <h3>Helpful Current Football Links</h3>
+    <p> 
+        <div class="fakeimg"> <a href="https://www.espn.com/soccer/scoreboard" target="_blank">All live scores</a></div><br><br>
+        <div class="fakeimg"> <a href="https://plus.espn.com/" target="_blank">ESPN+ sign in</a></div><br><br>
+        <div class="fakeimg"> <a href="https://www.worldsoccershop.com/" target="_blank">Merchandise</a></div><br><br>
+        <div class="fakeimg"> <a href="https://www.goal.com/en-us" target="_blank">Current football news</a></div><br><br>
+        <div class="fakeimg"> <a href="https://www.one37pm.com/strength/sports/the-5-social-media-accounts-all-soccer-fans-need-to-be-following" target="_blank">Social media links</a></div><br><br>
+    </p>
+    
+  </div>
+  
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+</body>
+</html>
